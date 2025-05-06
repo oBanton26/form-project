@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Rubik", 'Times New Roman', Times, serif;
+
+    --panel-proportions: 38.1;
 }
 
 @font-face {
@@ -12,4 +14,31 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+body {
+    display: flex;
+}
+
+.img-panel {
+    background-image: url(img/background-image-bodybuilder.jpg);
+    background-size: 100%;
+    width: calc(var(--panel-proportions)*1vw);
+    height: 100vh;
+
+    color: white;
+}
+
+.img-panel h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 60px;
+    background-color: rgba(236, 233, 233, 0.389);
+}
+
+.content-panel {
+    background-color: lightgray;
+    width: calc((100 - var(--panel-proportions))*1vw);
+    height: 100vh;
 }
