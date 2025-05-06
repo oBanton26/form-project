@@ -33,7 +33,7 @@ body {
     color: white;
     font-size: 4rem;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 70px;
     background-color: rgba(236, 233, 233, 0.389);
 }
 
@@ -41,4 +41,14 @@ body {
     background-color: lightgray;
     width: calc((100 - var(--panel-proportions))*1vw);
     height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+form,
+p {
+    margin-left: 30px;
 }
