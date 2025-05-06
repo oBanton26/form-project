@@ -2,4 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Rubik", 'Times New Roman', Times, serif;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/Rubik-Regular.woff2') format('woff2'),
+        url('fonts/Rubik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
