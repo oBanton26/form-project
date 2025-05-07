@@ -6,6 +6,7 @@
 
     --panel-proportions: 38.1;
     --left-margin: 45px;
+    --green: rgba(54, 93, 54, 0.878);
 }
 
 @font-face {
@@ -65,13 +66,26 @@ p {
 
 .white-background {
     background-color: white;
-    padding: 20px 45px 20px var(--left-margin);
+    padding: 20px 45px 25px var(--left-margin);
     box-shadow: 0 5px 5px rgba(128, 128, 128, 0.419);
 }
 
 button {
     margin-top: 30px;
     margin-left: var(--left-margin);
+
+    background-color: var(--green);
+    padding: 15px;
+    width: 260px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 2px grey;
+}
+
+button:hover {
+    background-color: rgb(54, 93, 54);
 }
 
 .couple-input {
@@ -98,8 +112,12 @@ input {
 }
 
 input:focus {
-    outline: 0.2px solid rgba(10, 80, 10, 0.878);
-    box-shadow: 2px 2px 5px rgba(10, 80, 10, 0.878);
+    outline: 0.2px solid var(--green);
+    box-shadow: 2px 2px 5px var(--green);
+}
+
+input:hover {
+    background-color: rgba(226, 223, 223, 0.409);
 }
 
 input[type="password"]:invalid {
@@ -112,4 +130,9 @@ h2 {
 
 label {
     color: rgb(98, 98, 98);
+}
+
+a {
+    color: var(--green);
+    appearance: none;
 }
