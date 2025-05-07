@@ -62,10 +62,28 @@ p {
 
 .white-background {
     background-color: white;
-    padding: 10px 40px 10px 40px;
+    padding: 20px 40px 20px 40px;
 }
 
 button {
     margin-top: 30px;
     margin-left: 40px;
+}
+
+.couple-input {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    width: 260px;
+}
+
+label {
+    color: rgb(98, 98, 98);
 }
