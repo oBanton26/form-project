@@ -51,6 +51,7 @@ body {
 
 p {
     margin-left: 40px;
+    margin-right: 100px;
 }
 
 
@@ -63,6 +64,7 @@ p {
 .white-background {
     background-color: white;
     padding: 20px 40px 20px 40px;
+    box-shadow: 0 5px 5px rgba(128, 128, 128, 0.419);
 }
 
 button {
@@ -80,8 +82,18 @@ button {
     display: flex;
     flex-direction: column;
 }
+
 input {
     width: 260px;
+    border: 1px solid rgb(98, 98, 98);
+    border-radius: 3px;
+    margin-top: 0.3rem;
+    padding: 4px 10px;
+    font-size: 1rem;
+}
+
+h2 {
+    color: rgb(98, 98, 98);
 }
 
 label {
